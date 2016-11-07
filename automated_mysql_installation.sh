@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MYSQL="vigilate"
-MYSQL_ROOT_PASSWORD=$(strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo)
+MYSQL="toto"
+MYSQL_ROOT_PASSWORD="toto" #$(strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo)
 echo $MYSQL_ROOT_PASSWORD >> mysql_passwd
 
 echo "[!] RUN INSTALLATION"
